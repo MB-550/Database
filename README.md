@@ -64,6 +64,8 @@ Next function is to display statistics which can be shown below you will have to
 
 All the other functions work in a similar way to the add user function and display statistics function and should be easy to use.
 
+to exit the program go to the main menu and type e and press enter
+
 Credits:
 This prgram was authored by Makeel Bhikshu
 
