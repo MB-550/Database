@@ -97,12 +97,18 @@ def generate_report():
                             if task[5] == "No" and datetime.date.fromisoformat(task[4]) < datetime.date.today():
                                 
                                 num_overdue += 1
-                                
-                    percentage_tasks_assigned = round((user_total_tasks/total_tasks)*100,2)
-                    percentage_user_completed = round((num_completed/user_total_tasks)*100,2)
-                    percentage_user_incomplete = round((num_incomplete/user_total_tasks)*100,2)
-                    percentage_user_overdue = round((num_overdue/user_total_tasks)*100,2)
-                    
+                    if total_tasks != 0 and user_total_tasks !=0:
+                        
+                        percentage_tasks_assigned = round((user_total_tasks/total_tasks)*100,2)
+                        percentage_user_completed = round((num_completed/user_total_tasks)*100,2)
+                        percentage_user_incomplete = round((num_incomplete/user_total_tasks)*100,2)
+                        percentage_user_overdue = round((num_overdue/user_total_tasks)*100,2)
+                    else:
+                        percentage_tasks_assigned = 0
+                        percentage_user_completed = 0
+                        percentage_user_incomplete = 0
+                        percentage_user_overdue = 0
+                        
                     user_overview.write(f"{user[0]}; {user_total_tasks}; {percentage_tasks_assigned}; {percentage_user_completed}; {percentage_user_incomplete}; {percentage_user_overdue}\n")
     
         print("\n^^^Report successfully generated^^^\n")
