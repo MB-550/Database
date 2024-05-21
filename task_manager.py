@@ -2,7 +2,7 @@
 '''This is the section where you will import libraries'''
 import datetime #this was used to help validate the dated more effectively with less code
 
-#A quick note that this program uses the delimeter "; " as in the short description of a task you can now use commas
+#A quick note that this program uses the delimiter "; " as in the short description of a task you can now use commas
 
 #=====Function section============
 
