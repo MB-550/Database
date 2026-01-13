@@ -16,7 +16,7 @@ those on the team to mark their progress and see pending tasks.
 
 Installation:
 First create a local folder in your device and call it whatever you want to,
-this folder will be used to store all the required files for the program.
+this folder will be used to store all the required files for the program(NB! make sure all the files required are in the same folder, no sub-folders and so on in the main folder!).
 Next download the files from the repository and move all files into the folder you previously created.
 Now the program has been successfully installed on your device.
 
